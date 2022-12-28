@@ -1,2 +1,2 @@
 # dg-left-sidernav
-sider-nav : cajin de navegacion lateral 
+sider-nav : cajon de navegacion lateral 
