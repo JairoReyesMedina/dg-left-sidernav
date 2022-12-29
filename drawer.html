@@ -4,41 +4,105 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1,user-scalable=no'>
+    <meta name='viewport' content='width=device-width, initial-scale=1,user-scalable=no'/>
+    <link rel="stylesheet" href="../iconos/fontawesome-free-6.1.1-web/css/all.css"/>
     <script src='dg-nav-drawer.js'></script>
 </head>
 <body style="height:100%;width:100%;">
     
-hello
 
+   
     
 
-    <dg-left-sidernav side="left" open="true" style="overflow-y: scroll;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id viverra risus, quis consectetur eros. Fusce dapibus mattis porta. Sed gravida felis dolor, sed dignissim odio euismod vel. Nullam non dui porttitor, eleifend dui sit amet, bibendum dolor. Phasellus aliquam nec eros non euismod. Cras ut odio dui. Quisque lorem erat, auctor eu risus quis, luctus efficitur nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam ac tortor eu quam tincidunt molestie. Praesent sed pharetra nunc.
+    <dg-left-sidernav open="true" style="overflow-y:scroll;">
 
-        Etiam ullamcorper porttitor ligula, eu finibus justo posuere eu. Vestibulum ante tellus, mattis ut venenatis mollis, maximus eu justo. Donec id metus velit. Morbi consequat eu erat sed vulputate. Mauris est eros, pulvinar at vehicula in, pellentesque sed felis. Nullam varius augue nibh, a eleifend purus tristique sit amet. Nullam et leo a felis suscipit pharetra semper et turpis. Vivamus id interdum ante. Etiam quis tellus vitae odio laoreet lacinia. Fusce eu tincidunt eros. Aenean gravida commodo aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed ligula sit amet risus ornare cursus. Vivamus vel sem elit.
-        
-        Curabitur a nisl risus. Donec quis cursus dui, et semper ipsum. Nulla id mattis purus. Nunc eu nisl ipsum. Donec aliquet turpis ac purus egestas semper. Praesent sed metus aliquet, placerat metus ac, condimentum neque. Sed et commodo sapien. Donec quis turpis facilisis, rhoncus lectus sed, varius felis. Vivamus tempus, mauris a sollicitudin congue, nisl augue consectetur leo, ac pharetra arcu nibh non enim. Curabitur quis nibh mi. Curabitur semper vel est eu accumsan. Nam at malesuada lectus, sit amet pellentesque justo. Praesent nisl enim, vehicula non ex eu, eleifend congue tellus.
-        
-        Donec finibus turpis a nisi fringilla facilisis. Aliquam erat volutpat. Sed pretium diam lectus, sed mattis sapien accumsan sed. Pellentesque a efficitur lorem. Mauris sit amet egestas nunc. Vivamus maximus in tortor eu egestas. Morbi scelerisque mollis condimentum. Maecenas iaculis libero et dolor condimentum, dapibus hendrerit erat facilisis. Nunc porttitor sodales magna et aliquam. Vestibulum ut enim sed dui pretium tincidunt a eget orci. Curabitur tempus mattis tortor. Morbi consectetur est quis enim convallis consectetur. Curabitur porttitor mattis ex, vitae eleifend lacus elementum eu. Quisque posuere volutpat ante, at pellentesque ex.
-        
-        Integer orci ligula, gravida non malesuada id, tincidunt sed magna. Ut rutrum ipsum mauris, non tristique ex tempus non. Fusce risus massa, pretium vitae lectus a, pretium consequat ipsum. Morbi sagittis efficitur porttitor. Aliquam dictum sem id pharetra luctus. Aliquam ullamcorper tortor libero, in mollis felis pretium vitae. Nunc commodo maximus massa, in accumsan diam egestas quis. Sed finibus nisl et velit molestie egestas. Duis pharetra leo mollis, accumsan dui vel, sollicitudin velit. Quisque semper, quam eu dignissim rutrum, magna lacus pellentesque justo, vel ornare leo magna quis mi. Quisque mauris ante, vulputate finibus ultrices ac, rutrum sed nunc.
-        
-        Generados 5 párrafos, 466 palabras, 3115 bytes de Lorem Ipsum
+        <div id="card">
+           <img id="circle" src="user-add.webp"/> 
+           
+           <h3 id="username">User Name...</h3>
+        </div>
+      
+
+      <div id="actions">
+       <div class="row"><span class="fa fa-home"></span><label>Inicio</label></div>
+       <div class="row"><span class="fa fa-search"></span><label>Buscar</label></div>
+       <div class="row"><span class="fa fa-bell"></span><label>Notificaciones</label></div>
+       <div class="row"><span class="fa fa-cart-shopping"></span><label>Mis compras</label></div>
+       <div class="row"><span class="fa fa-heart"></span><label>Favoritos</label></div>
+       <div class="row"><span class="fa fa-tags"></span><label>Ofertas</label></div>
+       <div class="row"><span class="fa fa-hand-holding-dollar"></span><label>Credito</label></div>
+       <hr>
+       <div class="row"><span class="fa fa-shop-lock"></span><label>Tiendas Oficiales</label></div>
+       <div class="row"><span class="fa fa-list"></span><label>Categoria</label></div>
+       <div class="row"><span class="fa fa-star"></span><label>Mejor reputación</label></div>
+       <hr>
+
+       <div class="row"><span class="fa fa-user-circle"></span><label>Cuenta</label></div>
+       <div class="row"><span class="fa fa-shop"></span><label>Vender</label></div>
+       <div class="row"><span class="fa fa-cart-shopping"></span><label>Ajustes</label></div>
+       <hr>
+       <div class="row"><label style="grid-column:1/3;">&nbsp;&nbsp;&nbsp;Acerca de Big-Shop</label></div>
+      </div>
+
     </dg-left-sidernav>
+
+ <button onclick="document.querySelector('dg-left-sidernav').toggle()">Open dg-left-sidernav</button>
+
 
         
 </body style="height:100%;width:100%;overflow:hidden;">
 </html>
 
+<script>
+   
+            document.querySelector("dg-left-sidernav").toggle();
+    
+
+</script>
+
 
 <style>
     *{
         padding:0px;margin:0px;
-        overscroll-behavior:none;
+        overscroll-behavior:none;font-family:arial;
     }
     dg-left-sidernav {
         height:100%;width:70%;
-        background:#4499ff;
+        background:#fff;
+    }
+
+    #card{
+        width:100%;height:150px;
+        background:linear-gradient(#4499ff,#fff);
+        display:grid;grid-template-columns:90px auto;
+    }
+    #username{
+        justify-self:start;align-self: center;
+        margin-left:7px;
+        margin-right:7px;
+        width:calc(100% - 14px); 
+    }
+    #circle{
+     width:100%;
+     border-radius:100%; 
+     box-shadow:#07f2 0px 0px 5px 30px,#07f2 0px 0px 5px 60px,#07f2 0px 0px 5px 90px;
+     justify-self: center;align-self: center;
+    }
+
+    #actions{
+        font-size:14pt;
+        display:grid;grid-template-columns:100%;
+        grid-auto-flow: row;
+        width:100%;height:auto;
+    }
+    .row{
+        height:50px;
+        display:grid;grid-template-columns:50px auto;
+    }
+    .row span{
+        justify-self:center;align-self: center;
+    }
+    .row label{
+        justify-self:start;align-self: center;
     }
 </style>
